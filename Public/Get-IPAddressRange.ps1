@@ -80,6 +80,5 @@ function Get-IPAddressRange {
         $null = $ipList.Add($new_ip.IPAddressToString)
         $start++
     }
-    return $ipList
-
+    Write-Output $ipList
 }
